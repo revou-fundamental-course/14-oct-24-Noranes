@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portofolio</title>
+    <link rel="icon" type="image/image" href="image/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Johanes_aron">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="style/Logo-RevoU-5_1.original.png" alt="logo"></a>
+            <h3>RevoU</h3>
+        </div>
+        <div class="Dropdown">
+            <div class="D-item"></div>
+            <div class="D-item"></div>
+            <div class="D-item"></div>
+        </div>
+        <div>
+            <ul class="nav-link">
+                <li><a href="">Home</a></li>
+                <li><a href="">Our Profile</a></li>
+                <li><a href="">Portofolio</a></li>
+                <li><a href="">Message Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="Main">
+        <div class="M-Welcome">
+            <h1 id="welcome-message">Welcome!</h1>
+            <p>Inilah Website latihan pertama saya, enjoy!</p>
+        </div>
+    </section>
+
+    <section class="Facilit">
+        imn 
+    </section>
+
+    <div class="container-contain">
+        <h1> Message us!</h1>
+    <section class="container">
+        <form id="questionnaire-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" placeholder="Enter your name">
+    
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+    
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Leave us a message" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+        <div id="output">
+            <h3>Submitted Information:</h3>
+            <p id="output-name"></p>
+            <p id="output-dob"></p>
+            <p id="output-gender"></p>
+            <p id="output-message"></p>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <h1>Created with sleep.</h1>
+    </footer>
+</body>
+<script src="js/java.js"></script>
+
+</html>

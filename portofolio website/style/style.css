@@ -1,0 +1,267 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+  }
+  
+  /* Preferred box-sizing value */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* For images to not be able to exceed their container */
+  img {
+    max-width: 100%;
+  }
+  
+  /* Removes spacing between cells in tables */
+  table {
+    border-collapse: collapse;
+  }
+  
+  /* Revert the 'white-space' property for textarea elements on Safari */
+  textarea {
+    white-space: revert;
+  }
+
+
+body {
+    background-color: grey;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: aliceblue;
+    border: 3px solid black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo h3 {
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Catamaran;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link a {
+    display: block;
+    padding: 30px 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Catamaran;
+    text-transform: uppercase;
+    transition: all ease-in-out 100ms;
+}
+
+.nav-link a:hover {
+    background-color: black;
+    color: white;
+}
+
+.Dropdown {
+    display: none;
+    cursor: pointer;
+    width: 34px;
+}
+
+.Dropdown .D-item {
+    flex-basis: 100%;
+    height: 4px;
+    background-color: black;
+    margin: 3px;
+}
+
+.Main {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border: 3px solid black;
+    height: 578px;
+}
+
+.M-Welcome {
+    padding-left: 20px;
+}
+
+.Main h1 {
+    font-family: Catamaran;
+    font-style: bold;
+    font-size: 50px;
+}
+
+.Main .M-Welcome p {
+    font-family: Catamaran;
+    font-size: 30px;
+}
+
+.msg-us {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border: 3px solid black;
+    height: 578px;
+}
+
+.Facilit {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border: 3px solid black;
+}
+
+.container-contain{
+    width: 100%;
+    background-color: white;
+    border: 3px solid black;
+}
+
+.container-contain h1 {
+    font-family: Catamaran;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    border: 3px solid black;
+    flex-direction: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#output {
+    display: none;
+    border: 3px solid black;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.form-group label {
+    width: 30%; 
+    font-weight: bold;
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 70%; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    resize: vertical;/
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#output {
+    margin-top: 20px;
+    display: none;
+}
+
+.foot {
+    width: 100%;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.foot h1 {
+    font-family: Catamaran;
+    font-size: 20px;
+}
+
+/* fumkigng reponsivity*/
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .Dropdown {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .nav-link {
+        display: none;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .nav-link li {
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .nav-link a {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .nav-link a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .Main {
+        height: 578px/2;
+    }
+
+    .M-Welcome {
+        padding-left: 10px;
+    }
+}
