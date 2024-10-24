@@ -1,0 +1,2 @@
+1. empty screen with just logo in front, add prompt of name.
+2. actual homepage
